@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:id="@+id/llv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/Logo"
+            android:textColor="#D5256C"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:gravity="center"
+                android:text="@string/lNombre"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:autofillHints=""
+                android:gravity="center"
+                android:hint="@string/nombre"
+                android:inputType="textPersonName"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/lblApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:gravity="center"
+                android:text="@string/lApellidos"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:autofillHints=""
+                android:gravity="center"
+                android:hint="@string/apellidos"
+                android:inputType="textCapWords"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/lblEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:text="@string/lEdad"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:autofillHints=""
+                android:gravity="center"
+                android:hint="@string/edad"
+                android:inputType="number"
+                tools:targetApi="o" />
+
+            <RadioGroup
+                android:id="@+id/rgGenero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblGenero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="@string/genero"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbHombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:checked="true"
+                    android:text="@string/hombre" />
+
+                <RadioButton
+                    android:id="@+id/rbMujer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/mujer" />
+
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spEstadoCivil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Switch
+                android:id="@+id/swHijos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hijos"
+                android:textOff="@string/no"
+                android:textOn="@string/si" />
+
+            <TextView
+                android:id="@+id/lblMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#D5256C"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="25dp">
+
+                <Button
+                    android:id="@+id/btEnviar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:text="@string/enviar"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btRestablecer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:text="@string/restablecer"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
