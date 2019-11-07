@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/ScrollView01"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:scrollbars="vertical">
@@ -19,7 +20,7 @@
             android:gravity="center"
             android:text="@string/Logo"
             android:textColor="#D5256C"
-            android:textSize="36sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -30,6 +31,7 @@
 
             <TextView
                 android:id="@+id/lblNombre"
+                android:textColor="@color/negro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="9dp"
@@ -45,11 +47,12 @@
                 android:autofillHints=""
                 android:gravity="center"
                 android:hint="@string/nombre"
-                android:inputType="textPersonName"
+                android:inputType="textCapWords"
                 tools:targetApi="o" />
 
             <TextView
                 android:id="@+id/lblApellidos"
+                android:textColor="@color/negro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="9dp"
@@ -70,9 +73,10 @@
 
             <TextView
                 android:id="@+id/lblEdad"
+                android:textColor="@color/negro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="13dp"
+                android:layout_marginTop="9dp"
                 android:gravity="center"
                 android:text="@string/lEdad"
                 android:textStyle="bold" />
@@ -81,7 +85,7 @@
                 android:id="@+id/etEdad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="13dp"
+                android:layout_marginTop="9dp"
                 android:autofillHints=""
                 android:gravity="center"
                 android:hint="@string/edad"
@@ -95,9 +99,10 @@
 
                 <TextView
                     android:id="@+id/lblGenero"
+                    android:textColor="@color/negro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
+                    android:layout_marginTop="9dp"
                     android:gravity="center"
                     android:text="@string/genero"
                     android:textStyle="bold" />
@@ -106,7 +111,7 @@
                     android:id="@+id/rbHombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
+                    android:layout_marginTop="9dp"
                     android:checked="true"
                     android:text="@string/hombre" />
 
@@ -114,7 +119,7 @@
                     android:id="@+id/rbMujer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
+                    android:layout_marginTop="9dp"
                     android:text="@string/mujer" />
 
             </RadioGroup>
@@ -136,23 +141,23 @@
                 android:id="@+id/lblMensaje"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#D5256C"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/Fuente"
                 android:textSize="21sp"
-                android:textStyle="bold"
-                android:layout_marginTop="25dp"/>
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
                 android:gravity="center"
-                android:orientation="horizontal"
-                android:layout_marginBottom="25dp">
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/btEnviar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="23dp"
+                    android:layout_marginTop="15dp"
                     android:text="@string/enviar"
                     android:textStyle="bold" />
 
@@ -160,7 +165,7 @@
                     android:id="@+id/btRestablecer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="23dp"
+                    android:layout_marginTop="15dp"
                     android:text="@string/restablecer"
                     android:textStyle="bold" />
             </LinearLayout>

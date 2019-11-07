@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Personal Data</string>
+    <string name="Logo">Personal Data</string>
+    <string name="lNombre">Name:</string>
+    <string name="nombre">Type your name here</string>
+    <string name="lApellidos">Last Name:</string>
+    <string name="apellidos">Type your last name here</string>
+    <string name="lEdad">Age:</string>
+    <string name="edad">Type your age here</string>
+    <string name="genero">Gender:</string>
+    <string name="feedbacktype">Choose</string>
+    <string name="feedbacktype1">Single</string>
+    <string name="feedbacktype2">Married</string>
+    <string name="feedbacktype3">Separated</string>
+    <string name="feedbacktype4">Widow</string>
+    <string name="hombre">Male</string>
+    <string name="mujer">Female</string>
+    <string name="enviar">Send</string>
+    <string name="hijos">Has Kids</string>
+    <string name="no">NO</string>
+    <string name="si">YES</string>
+    <string name="restablecer">Reset</string>
+</resources>

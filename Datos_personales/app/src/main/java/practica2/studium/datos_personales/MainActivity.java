@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Variables globales
     EditText editNombre, editApellidos, editEdad;
-    TextView result;
+    TextView result, lbNombre, lbApellidos, lbEdad;
     Button buttonEnviar, buttonRestablecer;
     RadioButton r1, r2;
     Spinner lstEstadoCivil;
@@ -29,8 +29,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Recogemos los datos
+        lbNombre = findViewById(R.id.lblNombre);
         editNombre = findViewById(R.id.etNombre);
+        lbApellidos = findViewById(R.id.lblApellidos);
         editApellidos = findViewById(R.id.etApellidos);
+        lbEdad = findViewById(R.id.lblEdad);
         editEdad = findViewById(R.id.etEdad);
         result = findViewById(R.id.lblMensaje);
         buttonEnviar = findViewById(R.id.btEnviar);
@@ -47,19 +50,45 @@ public class MainActivity extends AppCompatActivity {
 
                                             @Override
                                             public void onClick(View v) {
-
                                                 //Recogemos los datos de los edits en variables
+
                                                 String nombre = editNombre.getText().toString();
                                                 String apellidos = editApellidos.getText().toString();
                                                 String edad = editEdad.getText().toString();
+                                                Toast toast1 = Toast.makeText(getApplicationContext(), "Debes rellenar todos los campos", Toast.LENGTH_SHORT);
 
-                                                //Si los campos de texto están vacíos
-                                                if (nombre.isEmpty() || apellidos.isEmpty() || edad.isEmpty()) {
-                                                    Toast toast1 = Toast.makeText(getApplicationContext(), "Debes rellenar todos los campos", Toast.LENGTH_SHORT);
+                                                //Si nombre está vacío
+                                                if (nombre.isEmpty()) {
+                                                    lbNombre.setTextColor(getResources().getColor(R.color.rojo));
+                                                    lbNombre.setText("El campo 'Nombre' es obligatorio");
+                                                    toast1.show();
+
+                                                    //Si apellidos está vacío
+                                                } else if (apellidos.isEmpty()) {
+                                                    lbNombre.setTextColor(getResources().getColor(R.color.negro));
+                                                    lbNombre.setText("Nombre:");
+                                                    lbApellidos.setTextColor(getResources().getColor(R.color.rojo));
+                                                    lbApellidos.setText("El campo 'Apellidos' es obligatorio");
+                                                    toast1.show();
+
+                                                    //Si edad está vacío
+                                                } else if (edad.isEmpty()) {
+                                                    lbNombre.setTextColor(getResources().getColor(R.color.negro));
+                                                    lbNombre.setText("Nombre:");
+                                                    lbApellidos.setTextColor(getResources().getColor(R.color.negro));
+                                                    lbApellidos.setText("Apellidos:");
+                                                    lbEdad.setTextColor(getResources().getColor(R.color.rojo));
+                                                    lbEdad.setText("El campo 'Edad' es obligatorio");
                                                     toast1.show();
 
                                                     //Si no
                                                 } else {
+                                                    lbNombre.setTextColor(getResources().getColor(R.color.negro));
+                                                    lbNombre.setText("Nombre:");
+                                                    lbApellidos.setTextColor(getResources().getColor(R.color.negro));
+                                                    lbApellidos.setText("Apellidos:");
+                                                    lbEdad.setTextColor(getResources().getColor(R.color.negro));
+                                                    lbEdad.setText("Edad:");
 
                                                     //Creamos variable tipo String para mayor, genero e hijos
                                                     String mayor, genero, hijos;
@@ -72,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
 
                                                     //Convertimos el valor del EditText edad a numérico para poder operar con él
                                                     int numero = Integer.parseInt(editEdad.getText().toString());
-
 
                                                     //Si es mayor o igual a 18
                                                     if (numero >= 18)
@@ -106,12 +134,18 @@ public class MainActivity extends AppCompatActivity {
                                             }
 
                                         }
-
         );
         buttonRestablecer.setOnClickListener(new View.OnClickListener() {
 
                                                  @Override
                                                  public void onClick(View v) {
+                                                     //Restablecemos todo el formulario a su origen
+                                                     lbNombre.setTextColor(getResources().getColor(R.color.negro));
+                                                     lbNombre.setText("Nombre:");
+                                                     lbApellidos.setTextColor(getResources().getColor(R.color.negro));
+                                                     lbApellidos.setText("Apellidos:");
+                                                     lbEdad.setTextColor(getResources().getColor(R.color.negro));
+                                                     lbEdad.setText("Edad:");
                                                      editNombre.setText("");
                                                      editApellidos.setText("");
                                                      editEdad.setText("");
