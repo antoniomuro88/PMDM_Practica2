@@ -1,0 +1,177 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="llv" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Logo" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="fontFamily">@font/modernm</item>
+        <item name="backgroundTint">@color/rojo</item>
+        <item name="android:textSize">@dimen/TextSize</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/Logo</item>
+    </style>
+
+    <style name="llv300" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">@dimen/llv300</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="lblNombre" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/negro</item>
+        <item name="fontFamily">@font/maven_pro_bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/lNombre</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="etNombre" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop</item>
+        <item name="android:gravity">center</item>
+        <item name="android:hint">@string/nombre</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <style name="lblApellidos" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/negro</item>
+        <item name="fontFamily">@font/maven_pro_bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/lApellidos</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="etApellidos" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop</item>
+        <item name="android:gravity">center</item>
+        <item name="android:hint">@string/apellidos</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <style name="lblEdad" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/negro</item>
+        <item name="fontFamily">@font/maven_pro_bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/lEdad</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="etEdad" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop</item>
+        <item name="android:gravity">center</item>
+        <item name="android:hint">@string/edad</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="lblGenero">
+        <item name="android:textColor">@color/negro</item>
+        <item name="fontFamily">@font/maven_pro_bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/genero</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="rbHombre">
+        <item name="fontFamily">@font/maven_pro_bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop</item>
+        <item name="android:checked">true</item>
+        <item name="android:hint">@string/hombre</item>
+    </style>
+
+    <style name="rbMujer">
+        <item name="fontFamily">@font/maven_pro_bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop</item>
+        <item name="android:hint">@string/mujer</item>
+    </style>
+
+    <style name="spEstadoCivil">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop</item>
+
+    </style>
+
+    <style name="swHijos">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop</item>
+        <item name="android:text">@string/hijos</item>
+        <item name="android:textOff">@string/no</item>
+        <item name="android:textOn">@string/si</item>
+    </style>
+
+
+    <style name="lbMensaje" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop</item>
+        <item name="android:textSize">@dimen/Mensaje</item>
+    </style>
+
+    <style name="llhButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/MarginBot</item>
+    </style>
+
+    <style name="btEnviar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop</item>
+        <item name="android:text">@string/enviar</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="btRestablecer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop</item>
+        <item name="android:text">@string/restablecer</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

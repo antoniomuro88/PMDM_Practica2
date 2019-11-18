@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="llv300">300dp</dimen>
+    <dimen name="MarginTop">9dp</dimen>
+    <dimen name="MarginBot">5dp</dimen>
+    <dimen name="TextSize">24sp</dimen>
+    <dimen name="Mensaje">20sp</dimen>
+
+</resources>

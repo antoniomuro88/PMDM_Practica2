@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Datos Personales</string>
+    <string name="Logo">Datos Personales</string>
+    <string name="lNombre">Nombre:</string>
+    <string name="nombre">Introduzca su nombre</string>
+    <string name="lApellidos">Apellidos:</string>
+    <string name="apellidos">Introduzca sus apellidos</string>
+    <string name="lEdad">Edad:</string>
+    <string name="edad">Introduzca su edad</string>
+    <string name="genero">Género:</string>
+    <string name="feedbacktype">Elija su estado civil</string>
+    <string name="feedbacktype1">Solter@</string>
+    <string name="feedbacktype2">Casad@</string>
+    <string name="feedbacktype3">Separad@</string>
+    <string name="feedbacktype4">Viud@</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="enviar">Enviar</string>
+    <string name="hijos">Tiene hijos</string>
+    <string name="no">NO</string>
+    <string name="si">SI</string>
+    <string name="restablecer">Restablecer</string>
+</resources>

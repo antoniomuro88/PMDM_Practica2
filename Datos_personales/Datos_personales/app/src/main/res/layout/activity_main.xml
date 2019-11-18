@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:theme="@style/MyTheme"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:id="@+id/llv"
+        style="@style/llv">
+
+        <TextView
+            android:id="@+id/Logo"
+            style="@style/Logo" />
+
+        <LinearLayout
+            android:id="@+id/llv300"
+            style="@style/llv300">
+
+            <TextView
+                android:id="@+id/lblNombre"
+                style="@style/lblNombre" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                style="@style/etNombre"
+                android:autofillHints=""
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/lblApellidos"
+                style="@style/lblApellidos" />
+
+            <EditText
+                android:id="@+id/etApellidos"
+                style="@style/etApellidos"
+                android:autofillHints=""
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/lblEdad"
+                style="@style/lblEdad" />
+
+            <EditText
+                android:id="@+id/etEdad"
+                style="@style/etEdad"
+                android:autofillHints=""
+                tools:targetApi="o" />
+
+            <RadioGroup
+                android:id="@+id/rgGenero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblGenero"
+                    style="@style/lblGenero" />
+
+                <RadioButton
+                    android:id="@+id/rbHombre"
+                    style="@style/rbHombre" />
+
+                <RadioButton
+                    android:id="@+id/rbMujer"
+                    style="@style/rbMujer" />
+
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spEstadoCivil"
+                style="@style/spEstadoCivil" />
+
+            <Switch
+                android:id="@+id/swHijos"
+                style="@style/swHijos" />
+
+            <TextView
+                android:id="@+id/lblMensaje"
+                style="@style/lbMensaje" />
+
+            <LinearLayout
+                android:id="@+id/llhButton"
+                style="@style/llhButton">
+
+                <Button
+                    android:id="@+id/btEnviar"
+                    style="@style/btEnviar" />
+
+                <Button
+                    android:id="@+id/btRestablecer"
+                    style="@style/btRestablecer" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
